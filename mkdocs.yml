@@ -1,0 +1,58 @@
+site_name: "JP Study Notes"
+site_description: "Японська мова для українців - структуровані нотатки"
+site_url: "https://cat-dictator.github.io/jp-study-notes/"
+
+theme:
+  name: material
+  language: uk
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: pink
+      toggle:
+        icon: material/weather-night
+        name: Темна тема
+    - scheme: slate
+      primary: indigo
+      accent: pink
+      toggle:
+        icon: material/weather-sunny
+        name: Світла тема
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - toc.follow
+
+nav:
+  - Головна: index.md
+  - N5:
+      - Огляд рівня: n5/index.md
+      - Абетки:
+          - Хірагана: n5/kana/hiragana.md
+          - Катакана: n5/kana/katakana.md
+      - Граматика:
+          - Частки: n5/grammar/particles.md
+          - Дієслова: n5/grammar/verbs.md
+  - N4:
+      - Огляд рівня: n4/index.md
+  - Бізнес та ІТ:
+      - Огляд: business/index.md
+      - Бізнес-етикет: business/etiquette.md
+      - ІТ-лексика: business/it-vocabulary.md
+  - Ресурси: resources.md
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+  - tables
+  - admonition
+  - codehilite
